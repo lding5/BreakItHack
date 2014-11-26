@@ -1,0 +1,4 @@
+30
+Winnie 5 1000
+Tiger 3 2000
+Piglet 2 1500

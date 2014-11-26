@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class HoneyEater implements Runnable{
 
 	private int eatingPace;
@@ -14,6 +16,7 @@ public class HoneyEater implements Runnable{
 	}
 
 	public void run() {
+
 		System.out.println(name + " is here.");
 		boolean isRunning = true; 
 
@@ -25,7 +28,7 @@ public class HoneyEater implements Runnable{
 				isRunning = false;
 			}
 		} 
-		// System.out.println("== Honey left: " + honeypot + " Last Eater: " + lastEater);
+		System.out.println("== Honey left: " + honeypot + " Last Eater: " + lastEater);
 	}
 
 	public synchronized void eat(){

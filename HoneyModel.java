@@ -22,39 +22,10 @@ public class HoneyModel{
 		lastEater = eater.getLastEater();
 		System.out.println("last eater: " + lastEater);
 
-		
-
 	}
 
 	public String getResult(){
 		return lastEater;
 	}
 
-	public static void main(String [] args) {
-		
-		// LinkedList <HoneyEater> honeyEaterList = new LinkedList <HoneyEater> ();
-		// LinkedList <Thread> threadList = new LinkedList <Thread> ();
-
-		// while (reader.hasNext()){
-		// 	String[] line = reader.nextLine().split(" ");
-		// 	HoneyEater eater = new HoneyEater(honeypot, line[0], new Integer(line[1]), new Integer(line[2]));
-		// 	honeyEaterList.add(eater);
-		// 	threadList.add(new Thread(eater, eater.getName()));
-		// }
-
-		// System.out.println("Honeypot: " + honeypot);
-		// System.out.println("Eaters: " + honeyEaterList);
-		// System.out.println("_____________________");
-
-		// for (Thread t : threadList){
-		// 	t.start();
-		// }
-
-		// while(Thread.activeCount() != 1) {}
-		// System.out.println("_____________________");
-		// HoneyEater honeyEater = honeyEaterList.getFirst();
-		// System.out.println("Honey left: " + honeyEater.getHoneypot() + "\nLast eater: " + honeyEater.getLastEater());
-
-		
-	}
 }

@@ -29,7 +29,6 @@ public class HoneyEater implements Runnable{
 			}
 		} 
 		System.out.println("== Honey left: " + honeypot + " Last Eater: " + lastEater);
-		System.out.println("thread count: " + Thread.activeCount());
 	}
 
 	public synchronized void eat(){

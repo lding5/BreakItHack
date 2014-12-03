@@ -24,9 +24,7 @@ public class HoneyController {
 				// controller handle interaction betw view and model
 				model.execute(honeypot, new HoneyEater(honeypot, eater1Name, getEater1Eating, getEater1Napping));
 
-				System.out.println("before view");
 				view.setResult(model.getResult());
-				System.out.println("after view");
 
 
 			} catch (Exception e) {

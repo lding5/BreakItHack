@@ -1,0 +1,23 @@
+<project>
+	<target name="clean">
+		<delete dir="build"/>
+	</target>
+
+	<target name="compile">
+		<mkdir dir="build/class"/>
+		<javac srcdir="." destdir="build/class" includeantruntime="false"/>
+	</target>
+
+	<target name="jar">
+		<mkdir dir="build/jar"/>
+		<jar destfile="build/jar/Honey.jar" basedir="build/class">
+			<manifest>
+				<attribute name="Main-Class" value="oata.Honey"/>
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="run">
+		<java jar="build/jar/Honey.jar" fork="true"/>
+	</target>
+</project>

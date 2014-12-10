@@ -46,6 +46,7 @@ public class HoneyView extends JFrame {
 
 	public void setResult(String lastEater) {
 		result.setText(lastEater); 
+
 	}	
 
 	// directs to the controller

@@ -29,6 +29,7 @@ public class HoneyEater implements Runnable{
 			}
 		} 
 		System.out.println("== Honey left: " + honeypot + " Last Eater: " + lastEater);
+		System.out.println("thread count: " + Thread.activeCount());
 	}
 
 	public synchronized void eat(){
@@ -47,14 +48,11 @@ public class HoneyEater implements Runnable{
 		return name + "= " + "eating pace: " + eatingPace + " naps (msec): " + napTime;
 	}
 
-	public String getName() {
-		return name;
-	}
+	public String getName() { return name;	}
+	public String getLastEater() { return lastEater; }
+	public int getHoneypot() { return honeypot;	}
+	public int getEatingPace() {return eatingPace; }
+	public int napTime() { return napTime; }
+	
 
-	public String getLastEater() {
-		return lastEater;
-	}
-	public int getHoneypot() {
-		return honeypot;
-	}
 }

@@ -1,0 +1,1 @@
+16/12/2014 created BreakItHack repo. ran into problem where tried to move hack1 to this repo, but end up confusing git to point to hack1 instead of BreakItHack. Tried to run QuickTour.java, but failed at "Unknown Host Exception" with MongoClient.java
